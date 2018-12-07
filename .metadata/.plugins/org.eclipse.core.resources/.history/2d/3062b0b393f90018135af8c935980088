@@ -1,0 +1,22 @@
+package main;
+
+import java.awt.event.MouseListener;
+
+import javax.swing.JFrame;
+
+public class CookieFrameMain extends JFrame {
+	public CookieFrameMain() {
+		setExtendedState(MAXIMIZED_BOTH); 
+		setUndecorated(true);
+		addMouseListener((MouseListener) new MouseListener() {
+			
+		});
+		pack();
+		setVisible(true);
+	}
+
+	public static void main(String[] args) {
+		new CookieFrameMain();
+	}
+
+}

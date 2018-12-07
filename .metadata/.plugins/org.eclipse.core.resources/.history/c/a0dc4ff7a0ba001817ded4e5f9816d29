@@ -1,0 +1,64 @@
+package com.mosyle.manager.mdm.job;
+
+import com.mosyle.fmk.job.scheduler.*;
+import com.mosyle.manager.mdm.service.*;
+import com.mosyle.fmk.job.*;
+import com.mosyle.manager.mdm.repository.*;
+import com.fasterxml.jackson.databind.*;
+import com.mosyle.manager.constants.*;
+import org.apache.commons.lang3.exception.*;
+import org.quartz.*;
+import java.io.*;
+import com.fasterxml.jackson.databind.node.*;
+import com.mosyle.manager.mdm.entity.*;
+
+public class ManagerScheduledTaskJob extends MosyleQuartzJob {
+	private ManagerMDMService managerMDMService;
+	private MosyleJobHelper mosyleJobHelper;
+	private SimpleTrigger commandResponseTrigger;
+	private ManagerCommandResponseRepository managerCommandResponseRepository;
+	private final ObjectMapper mapper;
+
+	public ManagerScheduledTaskJob() {
+		this.mapper = new ObjectMapper();
+	}
+
+	public void execute(final JobExecutionContext context) throws JobExecutionException {
+		try {
+			this.getLogger().debug("Starting {}", (Object) this.getClass().getName());
+			final ManagerMDMCommandEntity managerMDMCommandEntity = (ManagerMDMCommandEntity) context.getTrigger()
+					.getJobDataMap().get((Object) ManagerConstants.SCHEDULED_TASK.getName());
+			final long duration = context.getTrigger().getJobDataMap()
+					.getLong(ManagerConstants.COMMAND_DURATION.getName());
+			final ObjectNode objectCommand = this.managerMDMService.executeCommand(managerMDMCommandEntity, duration);
+			final ManagerDetailsEntity managerDetailsEntity = managerMDMCommandEntity.getDetails();
+			if (objectCommand != null && objectCommand.size() != 0 && managerDetailsEntity != null
+					&& managerDetailsEntity.getOutput()) {
+				final ManagerCommandResponseEntity commandResponseEntity = (ManagerCommandResponseEntity) this.mapper
+						.readValue(objectCommand.toString(), (Class) ManagerCommandResponseEntity.class);
+				this.managerCommandResponseRepository.add(commandResponseEntity);
+				this.mosyleJobHelper.scheduleJob(new SimpleTrigger[] { this.commandResponseTrigger });
+			}
+		} catch (IOException ex) {
+			super.getLogger().error(ExceptionUtils.getStackTrace((Throwable) ex));
+			throw new JobExecutionException((Throwable) ex);
+		}
+	}
+
+	public void setManagerMDMService(final ManagerMDMService managerMDMService) {
+		this.managerMDMService = managerMDMService;
+	}
+
+	public void setMosyleJobHelper(final MosyleJobHelper mosyleJobHelper) {
+		this.mosyleJobHelper = mosyleJobHelper;
+	}
+
+	public void setCommandResponseTrigger(final SimpleTrigger commandResponseTrigger) {
+		this.commandResponseTrigger = commandResponseTrigger;
+	}
+
+	public void setManagerCommandResponseRepository(
+			final ManagerCommandResponseRepository managerCommandResponseRepository) {
+		this.managerCommandResponseRepository = managerCommandResponseRepository;
+	}
+}

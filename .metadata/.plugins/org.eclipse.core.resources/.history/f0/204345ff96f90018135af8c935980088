@@ -1,0 +1,73 @@
+package main;
+
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+
+import javax.swing.JFrame;
+
+public class CookieFrameMain extends JFrame {
+	private static final long serialVersionUID = 1L;
+	PanelWrapper pw = new PanelWrapper();
+	public CookieFrameMain() {
+		addMouseListener((MouseListener) new MouseListener() {
+
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				if (inCircle(arg0.getX(), arg0.getX())) {
+					
+				}
+			}
+
+			@Override
+			public void mouseEntered(MouseEvent arg0) {
+			}
+
+			@Override
+			public void mouseExited(MouseEvent arg0) {
+			}
+
+			@Override
+			public void mousePressed(MouseEvent arg0) {
+			}
+
+			@Override
+			public void mouseReleased(MouseEvent arg0) {
+			}
+			
+		});
+		setSize(1440, 822);
+		setResizable(false);
+		pw.setSize(getWidth()-20, getHeight());
+		pw.setBackground(Color.BLACK);
+		add(pw);
+		setVisible(true);
+		run();
+	}
+
+	public static void main(String[] args) {
+		new CookieFrameMain();
+	}
+	
+	public void run() {
+		long nextTime = System.currentTimeMillis()+50;
+		while (true) {
+			if (nextTime - System.currentTimeMillis() < 0) {
+				nextTime = System.currentTimeMillis()+50;
+				if (click) {
+					
+				}
+			}
+		}
+	}
+	
+	public boolean inCircle(int x, int y) {
+		
+		return true;
+	}
+	public void paint(Graphics g) {
+		super.paint(g);
+		pw.repaint();
+	}
+}

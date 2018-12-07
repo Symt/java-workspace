@@ -1,0 +1,20 @@
+package main;
+
+import java.awt.Dimension;
+import java.awt.Toolkit;
+
+import javax.swing.JFrame;
+
+public class CookieFrameMain extends JFrame {
+	public CookieFrameMain() {
+		
+		setState(JFrame.NORMAL);
+		
+		pack();
+		setVisible(true);
+	}
+	
+	public static void main(String[] args) {
+		new CookieFrameMain();
+	}
+}

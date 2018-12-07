@@ -1,0 +1,24 @@
+package main;
+
+import java.awt.Dimension;
+
+import javax.swing.JFrame;
+
+public class CookieFrameMain extends JFrame {
+	public CookieFrameMain() {
+		//setResizable(false);
+		setExtendedState(JFrame.MAXIMIZED_BOTH); 
+		setUndecorated(true);
+		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+		int width = screenSize.getWidth();
+		int height = screenSize.getHeight();
+		setSize(System.getProperty(""))
+		
+		pack();
+		setVisible(true);
+	}
+	
+	public static void main(String[] args) {
+		new CookieFrameMain();
+	}
+}

@@ -1,0 +1,33 @@
+package main;
+
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+
+import javax.swing.JFrame;
+
+public class CookieFrameMain extends JFrame {
+	PanelWrapper pw = new PanelWrapper();
+	public CookieFrameMain() {
+		setSize(1440, 900);
+		pw.setSize(getWidth()-20, getHeight());
+		pw.setBackground(Color.BLACK);
+		setVisible(true);
+	}
+
+	public static void main(String[] args) {
+		new CookieFrameMain();
+	}
+
+	
+	
+	public boolean inCircle(int x, int y) {
+		
+		return true;
+	}
+	public void paint(Graphics g) {
+		super.paint(g);
+		pw.repaint();
+	}
+}

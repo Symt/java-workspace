@@ -1,0 +1,4 @@
+#Thu Oct 18 21:29:48 CDT 2018
+__DEFAULT__=false
+org.eclipse.help.ui.localSearch.master=true
+expression=SWT

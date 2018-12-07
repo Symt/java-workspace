@@ -1,0 +1,16 @@
+package main;
+
+public class CookieFrameMain extends JFrame {
+	public CookieFrameMain() {
+
+		pack();
+		setExtendedState(JFrame.MAXIMIZED_BOTH); 
+		setUndecorated(true);
+		setVisible(true);
+	}
+
+	public static void main(String[] args) {
+		new CookieFrameMain();
+	}
+
+}

@@ -1,0 +1,16 @@
+package main;
+
+public class CookieFrameMain extends JFrame {
+	public CookieFrameMain() {
+
+		setState(JFrame.NORMAL);
+
+		pack();
+		setVisible(true);
+	}
+
+	public static void main(String[] args) {
+		new CookieFrameMain();
+	}
+
+}

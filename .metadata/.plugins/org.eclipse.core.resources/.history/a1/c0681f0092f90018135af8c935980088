@@ -1,0 +1,13 @@
+package main;
+
+import javax.swing.JFrame;
+
+public class CookieFrameMain extends JFrame {
+	public CookieFrameMain() {
+		
+	}
+	
+	public static void main(String[] args) {
+		new CookieFrameMain();
+	}
+}

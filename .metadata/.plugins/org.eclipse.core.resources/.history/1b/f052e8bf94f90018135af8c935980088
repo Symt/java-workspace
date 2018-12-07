@@ -1,0 +1,59 @@
+package main;
+
+import java.awt.Graphics;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+
+import javax.swing.JFrame;
+
+public class CookieFrameMain extends JFrame {
+	PanelWrapper pw = new PanelWrapper();
+	public CookieFrameMain() {
+		setExtendedState(MAXIMIZED_BOTH); 
+		//setUndecorated(true);  /* -- removes head -- */
+		addMouseListener((MouseListener) new MouseListener() {
+
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				if (inCircle(arg0.getX(), arg0.getX())) {
+					
+				}
+			}
+
+			@Override
+			public void mouseEntered(MouseEvent arg0) {
+			}
+
+			@Override
+			public void mouseExited(MouseEvent arg0) {
+			}
+
+			@Override
+			public void mousePressed(MouseEvent arg0) {
+			}
+
+			@Override
+			public void mouseReleased(MouseEvent arg0) {
+			}
+			
+		});
+		pw.setSize(getWidth()-20, getHeight());
+		pack();
+		setVisible(true);
+	}
+
+	public static void main(String[] args) {
+		new CookieFrameMain();
+	}
+
+	
+	
+	public boolean inCircle(int x, int y) {
+		
+		return false;
+	}
+	public void paint(Graphics g) {
+		super.paint(g);
+		
+	}
+}

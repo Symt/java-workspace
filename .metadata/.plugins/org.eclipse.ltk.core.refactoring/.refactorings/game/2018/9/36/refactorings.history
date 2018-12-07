@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Trail.java&apos; to &apos;side-scroller/src/scroller&apos;&#x0A;- Original project: &apos;game&apos;&#x0A;- Destination element: &apos;side-scroller/src/scroller&apos;&#x0A;- Original element: &apos;game.main.Trail.java&apos;" description="Copy compilation unit" destination="=side-scroller/src&lt;scroller" element1="/src&lt;game.main{Trail.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1536376040916" units="1" version="1.0"/>
+</session>

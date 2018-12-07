@@ -1,0 +1,14 @@
+package main;
+
+import java.awt.Color;
+import java.awt.Graphics;
+
+import javax.swing.JPanel;
+
+public class PanelWrapper extends JPanel {
+	public void paintComponent(Graphics g) {
+		super.paintComponent(g);
+		g.setColor(Color.BLACK);
+		g.fillRect(100, 100, 20, 20);
+	}
+}
