@@ -20,7 +20,7 @@ public class CookieFrameMain extends JFrame {
 	double cps = 0;
 
 	public CookieFrameMain() {
-		addMouseListener((MouseListener) new MouseListener() {
+		addMouseListener(new MouseListener() {
 
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
@@ -28,7 +28,6 @@ public class CookieFrameMain extends JFrame {
 					click = true;
 				}
 			}
-
 			@Override
 			public void mouseEntered(MouseEvent arg0) {
 			}

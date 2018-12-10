@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.mosyle.manager.mdm.app.SudoExploit"/>
-<fullyQualifiedTypeName name="org.slf4j.Logger"/>
 <fullyQualifiedTypeName name="java.lang.System.Logger"/>
 <fullyQualifiedTypeName name="com.mosyle.fmk.executable.MosyleExecutable"/>
 <fullyQualifiedTypeName name="java.util.regex.Pattern"/>
@@ -60,4 +58,6 @@
 <fullyQualifiedTypeName name="java.awt.geom.Arc2D.Double"/>
 <fullyQualifiedTypeName name="java.text.DecimalFormat"/>
 <fullyQualifiedTypeName name="java.math.RoundingMode"/>
+<fullyQualifiedTypeName name="javax.swing.JApplet"/>
+<fullyQualifiedTypeName name="com.apple.eawt.Application"/>
 </qualifiedTypeNameHistroy>
