@@ -13,7 +13,7 @@ public class PanelWrapper extends JPanel {
 	private static final long serialVersionUID = 1L;
 	int width, height, totalCookies;
 	BufferedImage cookie;
-	String string, string2;
+	String string;
 	double cps;
 	DecimalFormat df = new DecimalFormat("#.###");
 
@@ -32,8 +32,8 @@ public class PanelWrapper extends JPanel {
 		totalCookies = cookies;
 	}
 	
-	public void setCPS(double cps) {
-		this.cps = cps;
+	public void setCPS(double cps, double basecps) {
+		this.cps = cps + basecps;
 	}
 	
 	public void paintComponent(Graphics g) {
@@ -42,8 +42,12 @@ public class PanelWrapper extends JPanel {
 		g.setColor(Color.WHITE);
 		g.setFont(new Font("TrebuchetMS", Font.PLAIN, 32)); 
 		string = "" + totalCookies;
-		string2 = "CPS: " + df.format(cps);
 		g.drawString(string, getWidth() / 2 - g.getFontMetrics().stringWidth(string)/2, getHeight() / 2 + 300);
-		g.drawString(string2, getWidth() / 2 - g.getFontMetrics().stringWidth(string2)/2, getHeight() / 2 - 300);
+		string = "Cookies Per Second: " + df.format(cps);
+		g.drawString(string, getWidth() / 2 - g.getFontMetrics().stringWidth(string)/2, getHeight() / 2 - 300);
+		string = "Shop";
+		g.drawRect(getWidth()/4, getHeight()/2, 100, 32);
+		g.setFont(new Font("TrebuchetMS", Font.PLAIN, 25)); 
+		g.drawString(string, getWidth() / 4+23, getHeight() / 2+25);
 	}
 }
