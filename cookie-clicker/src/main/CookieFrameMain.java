@@ -16,7 +16,9 @@ import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.SwingConstants;
 
 public class CookieFrameMain extends JFrame {
 	BufferedImage cookie;
@@ -26,7 +28,10 @@ public class CookieFrameMain extends JFrame {
 	int cookies = 0;
 	double cps = 0;
 	double basecps = 0;
+	int multiplier = 1;
+	int totalCookies = 0;
 	JFrame shop = new JFrame("Shop");
+	JLabel cookieLabel;
 
 	public CookieFrameMain() {
 		setIconImage(new ImageIcon("icon.png").getImage());
@@ -36,8 +41,9 @@ public class CookieFrameMain extends JFrame {
 		shop.setResizable(false);
 		shop.setBackground(new Color(34, 34, 34));
 		shop.setLayout(new GridLayout(3, 6));
-		JButton[] shopItems = { new JButton("Slave ( " + 100 + " )"), new JButton("Indentured Servant ( " + 1000 + " )"),
-				new JButton("Sharecropper ( " + 10000 + " )"), new JButton("Overseer ( " + 100000 + " )") };
+		JButton[] shopItems = { new JButton("Slave ( " + 100 + " )"),
+				new JButton("Indentured Servant ( " + 1000 + " )"), new JButton("Sharecropper ( " + 10000 + " )"),
+				new JButton("Overseer ( " + 100000 + " )") };
 
 		for (int i = 0; i < shopItems.length; i++) {
 			shopItems[i].setFocusable(false);
@@ -52,24 +58,24 @@ public class CookieFrameMain extends JFrame {
 					case "slave":
 						if (cookies >= cookieCost) {
 							cookies -= cookieCost;
-							basecps += 1;
-							cookieCost += cookieCost/4;
+							basecps += 3;
+							cookieCost += cookieCost / 4;
 						}
 						((JButton) e.getSource()).setText("Slave ( " + cookieCost + " )");
 						break;
 					case "indenturedservant":
 						if (cookies >= cookieCost) {
 							cookies -= cookieCost;
-							basecps += 10;
-							cookieCost += cookieCost/8;
+							basecps += 20;
+							cookieCost += cookieCost / 8;
 						}
 						((JButton) e.getSource()).setText("Indentured Servant ( " + cookieCost + " )");
 						break;
 					case "sharecropper":
 						if (cookies >= cookieCost) {
 							cookies -= cookieCost;
-							basecps += 100;
-							cookieCost += cookieCost/16;
+							basecps += 200;
+							cookieCost += cookieCost / 16;
 						}
 						((JButton) e.getSource()).setText("Sharecropper ( " + cookieCost + " )");
 						break;
@@ -77,7 +83,7 @@ public class CookieFrameMain extends JFrame {
 						if (cookies >= cookieCost) {
 							cookies -= cookieCost;
 							basecps += 1000;
-							cookieCost += cookieCost/32;
+							cookieCost += cookieCost / 32;
 						}
 						((JButton) e.getSource()).setText("Overseer ( " + cookieCost + " )");
 						break;
@@ -86,8 +92,15 @@ public class CookieFrameMain extends JFrame {
 			});
 		}
 		boolean done = false;
+		JLabel l = new JLabel("Cookies: ", SwingConstants.RIGHT);
+		cookieLabel = new JLabel(" " + cookies, SwingConstants.LEFT);
 		for (int i = 0; i < 7; i++) {
 			shop.add(new JPanel());
+			if (i == 1 && !done) {
+				shop.add(l);
+				shop.add(cookieLabel);
+				i+=2;
+			}
 			if (i == 6 && !done) {
 				for (JButton k : shopItems)
 					shop.add(k);
@@ -165,8 +178,12 @@ public class CookieFrameMain extends JFrame {
 				if (click) {
 					pw.setCircleSize(190, 190, cookies);
 					click = false;
-					cookies++;
-					sessionCookies++;
+					cookies += multiplier;
+					sessionCookies += multiplier;
+					totalCookies++;
+					if (totalCookies % 100 == 0) {
+						multiplier *= 2;
+					}
 				} else {
 					pw.setCircleSize(200, 200, cookies);
 				}
@@ -188,6 +205,7 @@ public class CookieFrameMain extends JFrame {
 				time = System.currentTimeMillis() + 1000;
 				cookies += basecps;
 			}
+			cookieLabel.setText(" " + cookies);
 		}
 	}
 
