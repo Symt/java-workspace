@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<item value="true" key="org.eclipse.jdt.ui.codeformatter.create_profile_dialog.open_edit"/>
+	<item value="false" key="org.eclipse.jdt.ui.formatter_page.show_invisible_characters"/>
+	<item value="true" key="ProjectSelectionDialog.show_all"/>
+	<item value="0" key="org.eclipse.jdt.uiformatter_pagemodify_dialog.preferred_x"/>
+	<item value="23" key="org.eclipse.jdt.uiformatter_pagemodify_dialog.preferred_y"/>
+	<item value="40" key="org.eclipse.jdt.ui.codeformatter.line_wrapping_tab_page.preview_line_width"/>
+	<item value="00..1.0.111.0.0.1.1.0.0.1.1.0..11.0.0.1.0.0.0.0.0.0.0..00.0.0.0.0.0..10.0.1.0..00.0.0.0...00.0..11.00..0..000.0.0.0.0.0.0.0.0.0...00.0..0.." key="org.eclipse.jdt.uiformatter_page.preference_tree_expansion"/>
+	<item value="501" key="org.eclipse.jdt.uiformatter_pagemodify_dialog.sash_form_left_width"/>
+	<item value="1242" key="org.eclipse.jdt.uiformatter_pagemodify_dialog.preferred_width"/>
+	<item value="760" key="org.eclipse.jdt.uiformatter_pagemodify_dialog.preferred_height"/>
 	<item value="/Users/3057871/Desktop/java-workspace/Synograb" key="org.eclipse.jdt.ui.lastextjar"/>
+	<item value="759" key="org.eclipse.jdt.uiformatter_page.preference_scroll_position"/>
+	<item value="340" key="org.eclipse.jdt.uiformatter_page.last_focus_index"/>
+	<item value="716" key="org.eclipse.jdt.uiformatter_pagemodify_dialog.sash_form_rigth_width"/>
 	<section name="SelfEncapsulateFieldWizard">
 		<item value="false" key="GenerateJavadoc"/>
 	</section>
