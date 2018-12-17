@@ -21,7 +21,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 
-public class CookieFrameMain extends JFrame {
+public class Main extends JFrame {
 	BufferedImage cookie;
 	private static final long serialVersionUID = 1L;
 	PanelWrapper pw;
@@ -36,7 +36,7 @@ public class CookieFrameMain extends JFrame {
 	int slavesPerMinute = 0;
 	BigInteger cookies = BigInteger.valueOf(0);
 
-	public CookieFrameMain() {
+	public Main() {
 		setIconImage(new ImageIcon("icon.png").getImage());
 		shop = initShop();
 		addMouseListener(new MouseListener() {
@@ -70,7 +70,7 @@ public class CookieFrameMain extends JFrame {
 		setSize(1440, 822);
 		setResizable(false);
 		try {
-			cookie = ImageIO.read(new File("cookie-2.png"));
+			cookie = ImageIO.read(new File("./cookie-2.png"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -84,7 +84,7 @@ public class CookieFrameMain extends JFrame {
 	}
 
 	public static void main(String[] args) {
-		new CookieFrameMain();
+		new Main();
 	}
 
 	public void run() {
