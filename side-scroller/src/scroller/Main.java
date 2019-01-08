@@ -106,8 +106,6 @@ public class Main extends Canvas implements Runnable {
 			for (int i = 0; i < handler.object.size(); i++) {
 				obj = handler.object.get(i);
 				if (obj.getID() == ID.Cloud || obj.getID() == ID.Block) {
-					//System.out.println("Speed: " + speed);
-					//System.out.println("Colliding: " + player.isColliding());
 					obj.setVelX(speed);
 					if (obj.getX() + obj.width <= 0 && (obj.getID() == ID.Cloud || obj.getID() == ID.Block)) {
 						if (obj.getID() == ID.Cloud) {

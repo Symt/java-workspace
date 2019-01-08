@@ -10,7 +10,6 @@ public class Cloud extends GameObject {
 	private int width;
 	public Cloud(int x, int y, ID id, int width, Main main) {
 		super(x, y, id);
-
 		
 		this.width = width;
 		velX = main.speed;
