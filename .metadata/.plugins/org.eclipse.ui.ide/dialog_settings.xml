@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="/Users/3057871/Desktop/java-workspace/spreading-of-fire"/>
+		<item value="/Users/3057871/Desktop/java-workspace/manager-controler-3.4.4-jfx"/>
+		<item value="/Users/3057871/Desktop/java-workspace/Fractals1Handout"/>
 		<item value="/Users/3057871/Desktop/java-workspace/checkers-multi"/>
 		<item value="/Users/3057871/Desktop/java-workspace/rubiks-solve"/>
 		<item value="/Users/3057871/Desktop/decompiled-manager-controler-3.3-jfx"/>

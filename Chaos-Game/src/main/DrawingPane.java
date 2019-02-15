@@ -1,14 +1,12 @@
 package main;
 
-import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.util.concurrent.ThreadLocalRandom;
 
 import javax.swing.JPanel;
 
 public class DrawingPane extends JPanel {
+	private static final long serialVersionUID = 1L;
 	double[][] points;
 	double[][] plot;
 	int nofpoints;
@@ -24,11 +22,9 @@ public class DrawingPane extends JPanel {
 		if (points == null || plot == null) {
 			return;
 		}
-		Graphics2D g2d = (Graphics2D) g;
-		g2d.setStroke(new BasicStroke(2));
+		g.setColor(Color.GREEN);
 		for (int i = 0; i < nofpoints; i++) {
-			g2d.setColor(new Color(ThreadLocalRandom.current().nextInt(0, 255),ThreadLocalRandom.current().nextInt(0, 255),ThreadLocalRandom.current().nextInt(0, 255)));
-			g2d.drawOval((int) (plot[i][0]), (int) (plot[i][1]), 2, 2);
+			g.drawOval((int) (plot[i][0]), (int) (plot[i][1]), 2, 2);
 		}
 	}
 }

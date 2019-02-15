@@ -10,7 +10,7 @@
 	<item value="501" key="org.eclipse.jdt.uiformatter_pagemodify_dialog.sash_form_left_width"/>
 	<item value="1242" key="org.eclipse.jdt.uiformatter_pagemodify_dialog.preferred_width"/>
 	<item value="760" key="org.eclipse.jdt.uiformatter_pagemodify_dialog.preferred_height"/>
-	<item value="/Users/3057871/Documents/java3d/lib/ext" key="org.eclipse.jdt.ui.lastextjar"/>
+	<item value="/Users/3057871/Documents/java/jre/Contents/Home/lib/ext" key="org.eclipse.jdt.ui.lastextjar"/>
 	<item value="759" key="org.eclipse.jdt.uiformatter_page.preference_scroll_position"/>
 	<item value="340" key="org.eclipse.jdt.uiformatter_page.last_focus_index"/>
 	<item value="716" key="org.eclipse.jdt.uiformatter_pagemodify_dialog.sash_form_rigth_width"/>
@@ -143,6 +143,7 @@
 		<item value="false" key="JarManifestWizardPage.SAVE_MANIFEST"/>
 		<item value="false" key="JarPackageWizardPage.EXPORT_OUTPUT_FOLDER"/>
 		<list key="JarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="/Users/3057871/Desktop/test.jar"/>
 			<item value="/Users/3057871/Desktop/cookieclicker.jar"/>
 			<item value="/Users/3057871/Desktop/checkers-client.jar"/>
 			<item value="/Users/3057871/Desktop/Manager Editions/Manager.app/Contents/Java/manager-controler-3.3-jfx.jar"/>

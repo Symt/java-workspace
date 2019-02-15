@@ -12,12 +12,68 @@
 	<atom:link href="https://www.genuitec.com/feed/" rel="self" type="application/rss+xml" />
 	<link>https://www.genuitec.com</link>
 	<description>The Cloud Control Company</description>
-	<lastBuildDate>Mon, 07 Jan 2019 03:59:20 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 14 Feb 2019 14:36:23 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=4.9.2</generator>
 	<item>
+		<title>Fullstack Vue App with Node, Express and MongoDB</title>
+		<link>https://www.genuitec.com/fullstack-vue-app-node-express-mongodb/</link>
+		<pubDate>Fri, 01 Feb 2019 15:35:33 +0000</pubDate>
+		<dc:creator><![CDATA[dunebook7]]></dc:creator>
+				<category><![CDATA[Eclipse]]></category>
+		<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[MyEclipse]]></category>
+		<category><![CDATA[Programming Tips]]></category>
+		<category><![CDATA[Webclipse]]></category>
+		<category><![CDATA[express.js]]></category>
+		<category><![CDATA[fullstack app]]></category>
+		<category><![CDATA[fullstack development]]></category>
+		<category><![CDATA[MongoDB]]></category>
+		<category><![CDATA[node.js]]></category>
+		<category><![CDATA[vue.js]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=607277</guid>
+		<description><![CDATA[<p>Much of application development, including web applications, has to do with CRUD &#8211; creation, reading, updating and deletion of data. Today, we will be building a fullstack Vue note-taking application and showing you how to perform the aforementioned processes, using Node.js running the Express.js framework for the back end, and MongoDB to store our data.Below [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/fullstack-vue-app-node-express-mongodb/">Fullstack Vue App with Node, Express and MongoDB</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
+		<title>Update RE: MyEclipse and Oracle JDK</title>
+		<link>https://www.genuitec.com/myeclipse-oraclejdk-update/</link>
+		<pubDate>Tue, 15 Jan 2019 16:26:34 +0000</pubDate>
+		<dc:creator><![CDATA[timwebb]]></dc:creator>
+				<category><![CDATA[Eclipse]]></category>
+		<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[MyEclipse]]></category>
+		<category><![CDATA[Webclipse]]></category>
+		<category><![CDATA[Oracle JDK]]></category>
+		<category><![CDATA[Oracle JDK licensing model]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=606801</guid>
+		<description><![CDATA[<p>There is a lot of concern regarding Oracle JDK in Enterprises, in particular with the new licensing model that is now in effect. If you are immediately required to discontinue use of all Oracle JDKs, scroll to the end for steps to facilitate that change. If you can wait just a little bit, it’s important [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/myeclipse-oraclejdk-update/">Update RE: MyEclipse and Oracle JDK</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
+		<title>MyEclipse 2018.12 &#8211; Start off the New Year on the Right Foot</title>
+		<link>https://www.genuitec.com/myeclipse-2018-12-release/</link>
+		<pubDate>Tue, 08 Jan 2019 19:11:42 +0000</pubDate>
+		<dc:creator><![CDATA[Brian Fernandes]]></dc:creator>
+				<category><![CDATA[Eclipse]]></category>
+		<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[MyEclipse]]></category>
+		<category><![CDATA[Webclipse]]></category>
+		<category><![CDATA[MyEclipse 2018.12]]></category>
+		<category><![CDATA[myeclipse release]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=605515</guid>
+		<description><![CDATA[<p>Did you miss the MyEclipse 2018.12 release around the holidays? Besides the usual complement of bug fixes, we’ve been able to fix some long standing performance issues, and make some fixes for Java 10 as well. If you’re using MyEclipse 2018, this is a release you’ll want to pick up.Performance FixesSlow JSP Typing &#8211; you’re [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/myeclipse-2018-12-release/">MyEclipse 2018.12 &#8211; Start off the New Year on the Right Foot</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
 		<title>Celebrating Success… with You! Happy Holidays!</title>
 		<link>https://www.genuitec.com/celebrating-success-happy-holidays/</link>
 		<pubDate>Thu, 20 Dec 2018 17:48:30 +0000</pubDate>
@@ -253,64 +309,6 @@
 <p>The post <a rel="nofollow" href="https://www.genuitec.com/myeclipse-2018-java-10-java-ee-8-code-mining/">MyEclipse 2018: Java 10, Java EE 8, Code Mining &#038; More!</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
 ]]></description>
 		</item>
-		<item>
-		<title>Vue Example: Creating a TODO App using Vue.js 2, Vuex and CodeMix</title>
-		<link>https://www.genuitec.com/vue-example-creating-todo-app/</link>
-		<pubDate>Wed, 01 Aug 2018 15:43:02 +0000</pubDate>
-		<dc:creator><![CDATA[Wanda Muriy]]></dc:creator>
-				<category><![CDATA[Eclipse]]></category>
-		<category><![CDATA[Genuitec]]></category>
-		<category><![CDATA[MyEclipse]]></category>
-		<category><![CDATA[Programming Tips]]></category>
-		<category><![CDATA[Webclipse]]></category>
-		<category><![CDATA[todo app]]></category>
-		<category><![CDATA[todo list app]]></category>
-		<category><![CDATA[vue]]></category>
-		<category><![CDATA[vue apps]]></category>
-		<category><![CDATA[vue.js 2]]></category>
-		<category><![CDATA[vuex]]></category>
-
-		<guid isPermaLink="false">https://www.genuitec.com/?p=594703</guid>
-		<description><![CDATA[<p>Looking for an efficient way to create web apps? Look no further—CodeMix is here to give you an entirely new experience. The following video shows you how to create a Vue example app, created in Eclipse powered up by CodeMix. CodeMix is an Eclipse plugin that unlocks a wide array of technologies from VS Code and [&#8230;]</p>
-<p>The post <a rel="nofollow" href="https://www.genuitec.com/vue-example-creating-todo-app/">Vue Example: Creating a TODO App using Vue.js 2, Vuex and CodeMix</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
-]]></description>
-		</item>
-		<item>
-		<title>A Day with Dani: Getting Started with Python and CodeMix</title>
-		<link>https://www.genuitec.com/a-day-with-dani-getting-started-with-python-and-codemix/</link>
-		<pubDate>Thu, 26 Jul 2018 15:33:33 +0000</pubDate>
-		<dc:creator><![CDATA[Dani Faris]]></dc:creator>
-				<category><![CDATA[Eclipse]]></category>
-		<category><![CDATA[Genuitec]]></category>
-		<category><![CDATA[MyEclipse]]></category>
-		<category><![CDATA[Programming Tips]]></category>
-		<category><![CDATA[Webclipse]]></category>
-		<category><![CDATA[Python]]></category>
-		<category><![CDATA[Python development]]></category>
-		<category><![CDATA[Python development in Eclipse]]></category>
-		<category><![CDATA[Python development with CodeMix]]></category>
-
-		<guid isPermaLink="false">https://www.genuitec.com/?p=594203</guid>
-		<description><![CDATA[<p>Like I mentioned in my last blog, CodeMix is a plugin I use that adds a ton of powerful tools and capabilities to my Eclipse environment. After working without it and seeing how much better my development experience is with it, I don’t think I’ll ever go back to the old Eclipse. Why? I’ve been [&#8230;]</p>
-<p>The post <a rel="nofollow" href="https://www.genuitec.com/a-day-with-dani-getting-started-with-python-and-codemix/">A Day with Dani: Getting Started with Python and CodeMix</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
-]]></description>
-		</item>
-		<item>
-		<title>A Day with Dani: Eclipse Plugin for Awesome Workspace Customization</title>
-		<link>https://www.genuitec.com/a-day-with-dani-eclipse-plugin-for-awesome-workspace-customization/</link>
-		<pubDate>Tue, 17 Jul 2018 21:04:46 +0000</pubDate>
-		<dc:creator><![CDATA[Dani Faris]]></dc:creator>
-				<category><![CDATA[Genuitec]]></category>
-		<category><![CDATA[codemix]]></category>
-		<category><![CDATA[DevStyle]]></category>
-		<category><![CDATA[eclipse plugins]]></category>
-		<category><![CDATA[navigation]]></category>
-		<category><![CDATA[theming]]></category>
-
-		<guid isPermaLink="false">https://www.genuitec.com/?p=593215</guid>
-		<description><![CDATA[<p>The post <a rel="nofollow" href="https://www.genuitec.com/a-day-with-dani-eclipse-plugin-for-awesome-workspace-customization/">A Day with Dani: Eclipse Plugin for Awesome Workspace Customization</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
-]]></description>
-		</item>
 	</channel>
 </rss>
 
@@ -319,5 +317,5 @@ Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/pro
 
 Content Delivery Network via resources.cloud.genuitec.com
 
-Served from: www.genuitec.com @ 2019-01-07 00:52:24 by W3 Total Cache
+Served from: www.genuitec.com @ 2019-02-14 08:46:59 by W3 Total Cache
 -->
